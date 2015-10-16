@@ -1,0 +1,44 @@
+doctype html
+html(lang="en" ng-app="resume")
+	head
+		//- Basic Page Needs
+		meta(charset="utf-8")
+		title Anton Kostiuchkov
+		meta(name="description", content="")
+		meta(name="author" content="")
+
+		//- Mobile Specific Metas
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		//- Font
+		link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Fira+Sans:400,300,700" type="text/css")
+
+		//- CSS
+		link(rel='stylesheet', href='main.css')
+
+		//- Favicon
+		link(rel="icon", type="image/png", href="./img/favicon.png")
+
+		//- Angular
+		script(src="js/angular.min.js")
+		script(src="js/angular-ui-router.min.js")
+
+
+
+	body
+
+		nav
+			a(href="#/home").button Home
+			a(href="#/about").button About
+			a(href="#/experience").button Work Experience
+			a(href="#/work").button Featured Projects
+			a(href="Anton_Kostiuchkov.pdf" download).button ⬇ Download PDF Resume
+
+		main(ui-view)
+
+		script(src="js/jquery-2.1.4.min.js")
+		script(src="js/MainController.js")
+		script(src="js/app.js")
+
+

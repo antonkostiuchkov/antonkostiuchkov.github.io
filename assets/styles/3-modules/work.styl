@@ -1,0 +1,71 @@
+.work
+  position relative
+
+.tr
+  width 250px
+  height @width
+  background-image url(img/tr-proj.jpg)
+  left 20px
+
+
+.language-school
+  width 350px
+  height @width
+  background-image url(img/lang-school-proj.jpg)
+  top 200px
+  left 320px
+
+.linkedin
+  width 150px
+  height @width
+  background-color red
+  line-height @height
+  text-align center
+  font-size 20px
+  color white
+  top 550px
+  left 90px
+
+.github
+  width 120px
+  height @width
+  background-color navy
+  line-height @height
+  text-align center
+  font-size 20px
+  color white
+  top 420px
+  left 195px
+
+
+.proj
+  box-shadow 0 10px 6px -6px #777
+  border-radius 50%
+  border 6px solid white
+  position absolute
+  transition all 200ms ease-in-out
+
+  &:hover
+    border 6px solid blue
+    color white
+
+
+
+.project
+  display block
+  // flex-direction row
+
+
+  img
+    float left
+    margin 50px 40px 0 0
+
+  h2
+    margin-top 100px
+
+  p
+    font-size 20px
+
+  .close
+    font-size 18px
+    text-decoration underline
